@@ -46,13 +46,14 @@ class _UserLoginState extends State<UserLogin> {
               color: Color(0xFFEB3738),
               child: Column(
                 children: [
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Icon(
-                    Icons.water_drop,
-                    color: Colors.white,
-                    size: 70,
+                  
+                  Padding(
+                    padding: const EdgeInsets.only(top: 60),
+                    child: Icon(
+                      Icons.water_drop,
+                      color: Colors.white,
+                      size: 70,
+                    ),
                   ),
                   Text(
                     "ZINDAGI",
@@ -63,7 +64,7 @@ class _UserLoginState extends State<UserLogin> {
             ),
             Positioned(
               bottom: 60,
-              left: 20,
+              left: 50,
               child: Material(
                 elevation: 28,
                 borderRadius: BorderRadius.circular(40),
@@ -101,7 +102,7 @@ class _UserLoginState extends State<UserLogin> {
                     ),
                     Container(
                       width: 280,
-                      height: 50,
+                      height: 70,
                       child: TextField(
                         controller: emailController,
                         decoration: InputDecoration(
@@ -121,11 +122,11 @@ class _UserLoginState extends State<UserLogin> {
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     Container(
                       width: 280,
-                      height: 50,
+                      height: 70,
                       child: TextField(
                         controller: passwordController,
                         decoration: InputDecoration(
@@ -150,7 +151,7 @@ class _UserLoginState extends State<UserLogin> {
             ),
             Positioned(
               bottom: 45,
-              left: 60,
+              left: 90,
               child: ElevatedButton(
                 onPressed: () {
                   loginUser();
@@ -164,7 +165,7 @@ class _UserLoginState extends State<UserLogin> {
             ),
             Positioned(
               bottom: 10,
-              left: 70,
+              left: 120,
               child: InkWell(
                   onTap: () {
                     Navigator.push(

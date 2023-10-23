@@ -61,49 +61,50 @@ class _UpdateDonarState extends State<UpdateDonar> {
           children: [
             Container(
               width: 300,
-              height: 50,
+              height: 70,
               color: const Color.fromARGB(255, 252, 252, 252),
               child: TextField(
                 controller: _NameController,
                 decoration: InputDecoration(
                   hintText: "Type Your Name",
-                  labelText: "Full Name",
+                  labelText: "Full Name",labelStyle: TextStyle(fontSize: 20,color: Colors.black),
                 ),
               ),
             ),
             Container(
               width: 300,
-              height: 50,
+              height: 70,
               color: const Color.fromARGB(255, 252, 252, 252),
               child: TextField(
                 controller: _LocationController,
                 decoration: InputDecoration(
                   hintText: "Type Area",
-                  labelText: "Area",
+                  labelText: "Area",labelStyle: TextStyle(fontSize: 20,color: Colors.black),
                 ),
               ),
             ),
             Container(
               width: 300,
-              height: 50,
+              height: 70,
               color: const Color.fromARGB(255, 252, 252, 252),
               child: TextField(
                 controller: _NumberController,
                 decoration: InputDecoration(
                   hintText: "Type Phone Number",
-                  labelText: "Phone",
+                  labelText: "Phone",labelStyle: TextStyle(fontSize: 20,color: Colors.black),
                 ),
               ),
             ),
             Container(
               width: 300,
-              height: 50,
+              height: 70,
               color: const Color.fromARGB(255, 252, 252, 252),
               child: TextField(
                 controller: _DateController,
                 decoration: InputDecoration(
+                  
                   hintText: "02/12/2022",
-                  labelText: "Last Donate Date",
+                  labelText: "Last Donate Date",labelStyle: TextStyle(fontSize: 20,color: Colors.black),
                 ),
               ),
             ),
@@ -122,10 +123,10 @@ class _UpdateDonarState extends State<UpdateDonar> {
                       .docId, // Include the document ID for Firestore update
                 });
               },
-              child: Text("Update Donor"),
+              child: Text("Update Donor",style: TextStyle(fontSize: 20,color: const Color.fromARGB(255, 245, 245, 245)),),
               style: ElevatedButton.styleFrom(
-                primary: Colors.white,
-                onPrimary: Colors.red,
+                primary: const Color.fromARGB(255, 213, 50, 50),
+                onPrimary: const Color.fromARGB(255, 249, 248, 248),
                 fixedSize: Size(177, 48),
                 side: BorderSide(color: Colors.red, width: 2),
               ),

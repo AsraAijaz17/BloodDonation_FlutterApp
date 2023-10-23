@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterproj2/UserSCreeens/Scr5_Userprofile/UserProfile.dart';
+import 'package:flutterproj2/UserSCreeens/scr4_ShowAllDonars/donardetail.dart';
 import 'package:flutterproj2/UserSCreeens/scr4_ShowAllDonars/user_customDonarCont.dart';
 
 class UserShowDonars extends StatefulWidget {
@@ -42,7 +43,19 @@ class _UserShowDonarsState extends State<UserShowDonars> {
                 return Padding(
                   padding: const EdgeInsets.all(2.0),
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => DonarDetail(
+                                  name: "${snapshot.data!.docs[index]['Name']}",
+                                  location:
+                                      "${snapshot.data!.docs[index]['City']}",
+                                  contact:
+                                      "${snapshot.data!.docs[index]['Number']}",
+                                  date:
+                                      "${snapshot.data!.docs[index]['Last Donate']}")));
+                    },
                     child: UserCustomDonarCont(
                       Name: "${snapshot.data!.docs[index]['Name']}",
                       City: "${snapshot.data!.docs[index]['City']}",

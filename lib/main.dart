@@ -5,6 +5,8 @@ import 'package:flutterproj2/AdminSCreens/Scr3_Options/Options.dart';
 import 'package:flutterproj2/AdminSCreens/Scr3_Options/selectgroup.dart';
 import 'package:flutterproj2/UserSCreeens/Scr1_UserRegister/UserRegister.dart';
 import 'package:flutterproj2/UserSCreeens/Scr2_UserLogin/UserLogin.dart';
+import 'package:flutterproj2/UserSCreeens/Scr3_UserOptions/useroption.dart';
+import 'package:flutterproj2/UserSCreeens/scr4_ShowAllDonars/donardetail.dart';
 
 import 'package:flutterproj2/firebase_options.dart';
 import 'package:flutterproj2/rough.dart';
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.red),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: SplashScreen(),

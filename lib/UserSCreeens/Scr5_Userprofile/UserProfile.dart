@@ -60,6 +60,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutterproj2/UserSCreeens/Scr2_UserLogin/UserLogin.dart';
 
 class UserProfile extends StatefulWidget {
   const UserProfile({Key? key}) : super(key: key);
@@ -78,6 +79,7 @@ class _UserProfileState extends State<UserProfile> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red,
+        title: Text("PROFILE"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -92,9 +94,9 @@ class _UserProfileState extends State<UserProfile> {
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 10,
+                      left: 30,
                       child: Material(
-                        elevation: 7,
+                        elevation: 30,
                         child: Container(
                           height: 365,
                           width: 340,
@@ -192,9 +194,13 @@ class _UserProfileState extends State<UserProfile> {
                     ),
                     Positioned(
                         bottom: 15,
-                        left: 50,
+                        left: 70,
                         child: ElevatedButton(
                           onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => UserLogin()));
                             // Add your logout logic here
                           },
                           style: ElevatedButton.styleFrom(

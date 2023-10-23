@@ -51,7 +51,7 @@ class _AddDonarState extends State<AddDonar> {
             children: [
               Container(
                 width: 300,
-                height: 50,
+                height: 70,
                 color: const Color.fromARGB(255, 252, 252, 252),
                 child: TextField(
                   controller: _NameController,
@@ -62,7 +62,7 @@ class _AddDonarState extends State<AddDonar> {
               //-------------------------
               Container(
                 width: 300,
-                height: 50,
+                height: 70,
                 color: const Color.fromARGB(255, 252, 252, 252),
                 child: TextField(
                   controller: _LocationController,
@@ -73,7 +73,7 @@ class _AddDonarState extends State<AddDonar> {
               //-----------------------------------
               Container(
                 width: 300,
-                height: 50,
+                height: 70,
                 color: const Color.fromARGB(255, 252, 252, 252),
                 child: TextField(
                   controller: _NumberController,
@@ -84,7 +84,7 @@ class _AddDonarState extends State<AddDonar> {
               //---------------------------
               Container(
                 width: 300,
-                height: 50,
+                height: 70,
                 color: const Color.fromARGB(255, 252, 252, 252),
                 child: TextField(
                   controller: _DateController,
@@ -102,8 +102,8 @@ class _AddDonarState extends State<AddDonar> {
                 },
                 child: Text("Add New Donor"),
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.white, // Background color for "Add New Donor"
-                  onPrimary: Colors.red, // Text color for "Add New Donor"
+                  primary: const Color.fromARGB(255, 218, 45, 45), // Background color for "Add New Donor"
+                  onPrimary: const Color.fromARGB(255, 250, 249, 249), // Text color for "Add New Donor"
                   fixedSize: Size(177, 48), // Set the width and height
                   side: BorderSide(color: Colors.red, width: 2), // Red border
                 ),

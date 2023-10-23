@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterproj2/AdminSCreens/Scr2_LoginAdmin/adminLogin.dart';
 
 class AdminProfile extends StatefulWidget {
   const AdminProfile({super.key});
@@ -27,9 +28,9 @@ class _AdminProfileState extends State<AdminProfile> {
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 10,
+                      left: 30,
                       child: Material(
-                        elevation: 7,
+                        elevation: 37,
                         child: Container(
                           height: 365,
                           width: 340,
@@ -106,9 +107,14 @@ class _AdminProfileState extends State<AdminProfile> {
                     ),
                     Positioned(
                         bottom: 15,
-                        left: 50,
+                        left: 80,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => AdminLogin()));
+                          },
                           style: ElevatedButton.styleFrom(
                             primary: Colors.red, // Background color
                             onPrimary: Colors.white, // Text color

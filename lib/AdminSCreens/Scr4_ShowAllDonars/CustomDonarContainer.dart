@@ -27,7 +27,7 @@ class _CustomDonarContainerState extends State<CustomDonarContainer> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 160, // Set the height of the Card
+      height: 180, // Set the height of the Card
       child: Card(
         color: Colors.white,
         shape: RoundedRectangleBorder(

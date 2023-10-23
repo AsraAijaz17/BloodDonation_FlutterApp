@@ -74,7 +74,7 @@ class _UserRegisterState extends State<UserRegister> {
             ),
             Positioned(
               bottom: 80,
-              left: 20,
+              left: 50,
               child: Material(
                 elevation: 28,
                 borderRadius: BorderRadius.circular(40),
@@ -95,7 +95,7 @@ class _UserRegisterState extends State<UserRegister> {
                     ),
                     Container(
                       width: 280,
-                      height: 50,
+                      height: 60,
                       child: TextField(
                         controller: NameController,
                         decoration: InputDecoration(
@@ -118,7 +118,7 @@ class _UserRegisterState extends State<UserRegister> {
                     //--------------
                     Container(
                       width: 280,
-                      height: 50,
+                      height: 60,
                       child: TextField(
                         controller: ContactController,
                         decoration: InputDecoration(
@@ -141,7 +141,7 @@ class _UserRegisterState extends State<UserRegister> {
                     //------------
                     Container(
                       width: 280,
-                      height: 50,
+                      height: 60,
                       child: TextField(
                         controller: emailController,
                         decoration: InputDecoration(
@@ -161,11 +161,11 @@ class _UserRegisterState extends State<UserRegister> {
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     Container(
                       width: 280,
-                      height: 50,
+                      height: 60,
                       child: TextField(
                         controller: passwordController,
                         decoration: InputDecoration(
@@ -190,7 +190,7 @@ class _UserRegisterState extends State<UserRegister> {
             ),
             Positioned(
               bottom: 50,
-              left: 50,
+              left: 80,
               child: ElevatedButton(
                 onPressed: () {
                   registerUser();
@@ -204,7 +204,7 @@ class _UserRegisterState extends State<UserRegister> {
             ),
             Positioned(
               bottom: 0,
-              left: 70,
+              left: 110,
               child: InkWell(
                   onTap: () {
                     Navigator.push(context,

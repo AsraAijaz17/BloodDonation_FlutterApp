@@ -35,7 +35,7 @@ class _OptionsState extends State<Options> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 400,
+              height: 600,
               width: double.infinity,
               child: Image.asset(
                 "assets/images/r.png",
@@ -72,7 +72,8 @@ class _OptionsState extends State<Options> {
                 SelectGroup(Group: "ALL"),
               ],
             ),
-            Spacer(),
+            // Spacer(),
+            SizedBox(height: 20,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
